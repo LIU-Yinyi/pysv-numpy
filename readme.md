@@ -1,11 +1,12 @@
-# pysv-numpy: Interface Python Array with System-Verilog Data
+# pysv-numpy: Interface Python Array with System-Verilog
 
 ![env](https://img.shields.io/badge/env-python3-brightgreen)  ![version](https://img.shields.io/badge/version-0.1-blue)  
 
 **pysv-numpy** is a bridge framework that allows running Python functions in System-Verilog with *numpy-svOpenArrayHandle* interplay. Yes! It supports <u>multi-dimension data with arbitrary bit depths</u>. We also optimize the runtime speed by adopting *import-and-cache* instead of *parse-when-call* strategy: The Python scripts are parsed from the plain text only once, and are running through bytecodes until the environment is destructed.
 
-> **Note:** If you do not need to handle the array data between Python and System-Verilog, kindly refer to another amazing project [pysv](https://github.com/Kuree/pysv) developed by [@Kuree](https://github.com/Kuree). But **pysv-numpy** has the totally different design philosophy from **pysv**, and thus should follow a distinctive configuration way.
+> **Note:** If you do not need to handle the array data between Python and System-Verilog, kindly refer to another amazing project [pysv](https://github.com/Kuree/pysv) developed by [@Kuree](https://github.com/Kuree). But **pysv-numpy** has the totally different design philosophy from **pysv**, and thus should follow a distinctive configuration way (@see also [Advanced Topics](#advanced-topics)).
 
+**Any Suggestions are welcomed! [Contact me via Email.](mailto:yinyi.liu@connect.ust.hk)**
 
 ## Change Logs
 - [x] May 1, 2023: Extracted as *pysv-numpy* library from FIONA project and ready to release.
